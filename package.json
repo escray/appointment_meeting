@@ -2,9 +2,11 @@
   "name": "consultly",
   "private": true,
   "dependencies": {
+    "@grpc/grpc-js": "^1.2.1",
     "@rails/webpacker": "3.5",
     "gatsby": "^2.27.4",
-    "tailwindcss": "^0.7.2"
+    "grpc": "^1.24.4",
+    "tailwindcss": "^0.7.4"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
