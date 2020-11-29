@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_20_225816) do
+ActiveRecord::Schema.define(version: 2020_11_29_075307) do
 
   create_table "comments", force: :cascade do |t|
     t.text "reply"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2018_11_20_225816) do
     t.string "card_exp_month"
     t.string "card_exp_year"
     t.string "card_last4"
+    t.boolean "is_investor", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
